@@ -1,0 +1,33 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"organizeImports": {
+		"enabled": false
+	},
+	"linter": {
+		"enabled": true
+	},
+	"javascript": {
+		"formatter": {
+			"semicolons": "asNeeded",
+			"quoteStyle": "single",
+			"indentWidth": 4,
+			"trailingCommas": "es5",
+			"bracketSpacing": true,
+			"quoteProperties": "asNeeded",
+			"lineEnding": "lf",
+			"lineWidth": 90
+		}
+	},
+	"files": {
+		"ignore": [
+			".husky",
+			".idea",
+			".vscode",
+			"pnpm-lock.yaml",
+			"node_modules",
+			"packages/**/pnpm-lock.yaml",
+			"packages/**/node_modules",
+			"packages/**/dist"
+		]
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"name": "@applications/example",
+	"description": "Application for example workspace power",
+	"version": "1.0.0",
+	"author": "titsex",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"type:check": "tsc --project ./tsconfig.json",
+		"start": "pnpm type:check && tsx ./src/index.ts",
+		"dev": "pnpm type:check && tsx watch --env-file=.env ./src/index.ts"
+	},
+	"dependencies": {
+		"@packages/logger": "workspace:*"
+	},
+	"devDependencies": {
+		"@types/node": "^22.10.2",
+		"tsx": "^4.19.2",
+		"typescript": "^5.7.2"
+	}
+}

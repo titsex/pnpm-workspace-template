@@ -1,0 +1,27 @@
+{
+	"name": "@packages/logger",
+	"description": "Utilities for logging anything",
+	"version": "1.0.0",
+	"author": "titsex",
+	"license": "MIT",
+	"main": "./dist/index.mjs",
+	"types": "./dist/index.d.mts",
+	"exports": "./dist/index.mjs",
+	"directories": {
+		"lib": "src"
+	},
+	"files": ["dist"],
+	"scripts": {
+		"type:check": "tsc --project ./tsconfig.json",
+		"build": "pnpm type:check && tsup",
+		"dev": "tsup --watch"
+	},
+	"devDependencies": {
+		"@types/node": "^22.10.2",
+		"tsup": "^8.3.5",
+		"typescript": "^5.7.2"
+	},
+	"dependencies": {
+		"chalk": "^5.4.1"
+	}
+}
