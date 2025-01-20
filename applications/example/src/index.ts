@@ -1,7 +1,9 @@
-import { Logger } from '@packages/logger'
+import { Logger, LogLevel } from '@packages/logger'
 
 const logger = new Logger({
 	application: 'example',
+	logLevel: LogLevel.WARN,
+	exactLevelMode: true,
 })
 
 const object = {

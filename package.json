@@ -1,10 +1,9 @@
 {
 	"name": "project-name",
 	"description": "project-description",
-	"version": "0.0.1",
 	"author": "titsex",
 	"license": "MIT",
-	"packageManager": "pnpm@9.14.2",
+	"packageManager": "pnpm@9.15.4",
 	"scripts": {
 		"format": "biome format . --write",
 		"lint": "biome lint . --write",
